@@ -9,5 +9,5 @@ $response = $client->from('users')->select('
                                         teams (
                                             name
                                         )')->execute();
-$output = $response;
-print_r($output);
+
+print_r($response);

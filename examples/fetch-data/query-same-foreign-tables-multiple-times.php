@@ -9,5 +9,5 @@ $response = $client->from('messages')->select('
                                         from:sender_id(name),
                                         to:receiver_id(name)
                                         ')->execute();
-$output = $response;
-print_r($output);
+
+print_r($response);

@@ -5,5 +5,5 @@ use Supabase\Postgrest\PostgrestClient;
 
 $client = new PostgrestClient($reference_id, $api_key);
 $response = $client->from('countries')->update(['name'=> 'Australia'])->eq('id', 1)->select()->execute();
-$output = $response;
-print_r($output);
+
+print_r($response);

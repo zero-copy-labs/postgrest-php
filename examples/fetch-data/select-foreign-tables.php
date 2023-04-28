@@ -9,5 +9,5 @@ $response = $client->from('countries')->select('
                                         cities (
                                             name
                                         )')->execute();
-$output = $response;
-print_r($output);
+
+print_r($response);

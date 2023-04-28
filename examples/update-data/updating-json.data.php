@@ -12,5 +12,5 @@ $response = $client->from('users')->update([
 ])
   ->eq('address->postcode', 90210)
   ->select()->execute();
-$output = $response;
-print_r($output);
+
+print_r($response);
