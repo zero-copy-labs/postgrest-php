@@ -19,6 +19,9 @@ PHP Client library to interact with Supabase Postgrest.
 composer require supabase/postgrest-php
 ```
 
+### Examples
+[Examples directory](https://github.com/zero-copy-labs/postgrest-php/tree/main/examples)
+
 ### Connecting to the postgrest backend
 
 ```php

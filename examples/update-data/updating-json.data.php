@@ -3,8 +3,7 @@
 require '../header.php';
 use Supabase\Postgrest\PostgrestClient;
 
-$opts = [];
-$client = new PostgrestClient($reference_id, $api_key, $opts, $domain, $scheme, $path);
+$client = new PostgrestClient($reference_id, $api_key);
 $response = $client->from('users')->update([
 	'address'=> [
 		'street'  => 'Melrose Place',
@@ -13,5 +12,5 @@ $response = $client->from('users')->update([
 ])
   ->eq('address->postcode', 90210)
   ->select()->execute();
-$output = $response;
-print_r($output);
+
+print_r($response);
